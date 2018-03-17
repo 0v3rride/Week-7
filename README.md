@@ -11,7 +11,7 @@ Time spent: 5 hours spent in total
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
     - Fixed in version: 4.7.2
-  - GIF Walkthrough: ![User Enumeration]()
+  - GIF Walkthrough: ![User Enumeration](https://github.com/0v3rride/Week-7/blob/master/W7_User_Enumeration(1).gif)
   - Steps to recreate: 
     - Create new user(s).
     - Enter a known username such as admin or moderator in my case followed by an invalid password for that account.
@@ -23,7 +23,7 @@ Time spent: 5 hours spent in total
     - Vulnerability types: Persistent XSS
     - Tested in version: 4.2
     - Fixed in version: Unknown
-  - GIF Walkthrough: [Authenticated Persistent XSS]()
+  - GIF Walkthrough: [Authenticated Persistent XSS](https://github.com/0v3rride/Week-7/blob/master/W7_Persistent_XSS_As_Editor(2).gif)
   - Steps to recreate: 
     - Created a new account with editor privileges named moderator which was used for the user enumeration walkthrough.
     - Logged into moderator and navigated to the "Example front page" post.
@@ -38,7 +38,7 @@ Time spent: 5 hours spent in total
     - Vulnerability types: Persistent XSS
     - Tested in version: 4.0
     - Fixed in version: 4.2.1
-  - GIF Walkthrough: [Unauthenticated Persistent XSS]()
+  - GIF Walkthrough: [Unauthenticated Persistent XSS](https://github.com/0v3rride/Week-7/blob/master/W7_Persistent_XSS_As_Unauthenticated_User(3).gif)
   - Steps to recreate:
     - An affected wordpress site must allow strangers or unregistered users to comment on posts and pages.
     - Generated 65563 random bytes by issuing the following command in the terminal of Kali Linux: `/usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l 65536 -s A`
@@ -46,12 +46,12 @@ Time spent: 5 hours spent in total
   - Affected source code:
     - [Klikki's exploit code](https://klikki.fi/adv/wordpress2.html)
       - [Exploit-db 36844](https://www.exploit-db.com/exploits/36844/)
-## 4. 
-  - Summary: Cross-Site Scripting (XSS)
+## 4. Cross-Site Scripting (XSS)
+  - Summary: 
     - Vulnerability types: Cross-Site Scripting (XSS)
     - Tested in version: 4.0
     - Fixed in version: 4.6
-  - GIF Walkthrough: [Cross-Site Scripting]()
+  - GIF Walkthrough: [Cross-Site Scripting](https://github.com/0v3rride/Week-7/blob/master/W7_Persistent_XSS_Authenticated(4).gif)
   - Steps to recreate:
     - Comment on a post (authenticated or unauthenticated).
     - Enter the following JS code: `<script>alert(document.cookie)</script>`
@@ -62,7 +62,7 @@ Time spent: 5 hours spent in total
     - Vulnerability types: XSS (non-persistent) (CVE-2017-9061)
     - Tested in version: 4.7
     - Fixed in version: 4.7.5
-  - GIF Walkthrough: [Large file upload error XSS]()
+  - GIF Walkthrough: [Large file upload error XSS](https://github.com/0v3rride/Week-7/blob/master/W7_Large_File_Upload_Error_XSS(5).gif)
   - Steps to recreate:
     - This must be done in Linux and you must be authenticated.
     - Create a .png file that is 20MB in size using the command `fallocate -l 20M bad_file.png` one can also use
