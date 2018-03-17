@@ -15,7 +15,8 @@ Time spent: 5 hours spent in total
   - Steps to recreate: 
     - Create new user(s).
     - Enter a known username such as admin or moderator in my case followed by an invalid password for that account.
-    - Detailed error message appears letting a user or attacker know that there is infact an account named admin, moderator, etc.
+    - A detailed error message appears letting a user or attacker know that there is infact an account named admin, moderator, etc.
+    - Theoretically, all they would have to do is use the nifty built-in password cracker/brute-forcer via the wpscan tool in Kali by using the --wordlist option and feeding it a dictionary text or list file and one of the now known usernames (--username option).
   - Affected source code:
     - [WordPress Github](https://github.com/WordPress/WordPress/commit/daf358983cc1ce0c77bf6d2de2ebbb43df2add60)
 ## 2. Persistent XSS as an authenticated user (variation of CVE-2015-3440)
