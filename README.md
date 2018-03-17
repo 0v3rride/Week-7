@@ -68,7 +68,7 @@ Time spent: 5 hours spent in total
     - Create a .png file that is 20MB in size using the command `fallocate -l 20M bad_file.png` one can also use
 the dd command `dd if=/dev/<zero|urandom> of=~/Desktop/bad_file.txt bs=2048 count=10` or another command that fulfills this requirement.
     - Rename the file to `Some random name<img src=x onerror=alert(1)>.png`.
-    - Upload the file via the add new media option and dragging the file you made into the drop the area as the admin.
+    - Upload the file via the add new media option and drag the file you made into the drop the area as the admin.
   - Affected source code:
     - [Hackerone](https://hackerone.com/reports/203515)
     - [CVE Details](https://www.cvedetails.com/cve/CVE-2017-9061/) 
