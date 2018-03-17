@@ -7,24 +7,24 @@ Time spent: 5 hours spent in total
 ## Pentesting Report
 
 1. User Enumeration <= 4.7.1 (CVE-2017-5487)
-  - [ ] Summary: 
+  - [] Summary: 
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
     - Fixed in version: 4.7.2
-  - [ ] GIF Walkthrough: ![User Enumeration]()
-  - [ ] Steps to recreate: 
+  - [] GIF Walkthrough: ![User Enumeration]()
+  - [] Steps to recreate: 
     - Create new user(s).
     - Enter a known username such as admin or moderator in my case followed by an invalid password for that account.
     - Detailed error message appears letting a user or attacker know that there is infact an account named admin, moderator, etc.
-  - [ ] Affected source code:
+  - [] Affected source code:
     - [CVE-2017-5487](https://github.com/WordPress/WordPress/commit/daf358983cc1ce0c77bf6d2de2ebbb43df2add60)
-2. Variation of CVE-2015-3440
-  - [ ] Summary: 
+2. Persistent XSS via authenticated user (variation of CVE-2015-3440)
+  - [] Summary: 
     - Vulnerability types: Persistent XSS via authenticated user
     - Tested in version: 4.2
     - Fixed in version: Unknown
-  - [ ] GIF Walkthrough: [Persistent XSS via authenticated user (variation of CVE-2015-3440)]
-  - [ ] Steps to recreate: 
+  - [] GIF Walkthrough: [Persistent XSS via authenticated user (variation of CVE-2015-3440)]()
+  - [] Steps to recreate: 
     - Created a new account with editor privileges named moderator which was used for the user enumeration walkthrough.
     - Logged into moderator and navigated to the "Example front page" post.
     - Entered the following code into the ![]<a href=" onmouseover=alert(unescape(/xss/.source)) {enter more data here to make the overall length of the comment 64kb(65536 bytes/characters) long or greater}"
