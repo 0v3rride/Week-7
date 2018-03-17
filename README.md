@@ -11,11 +11,28 @@ Time spent: 5 hours spent in total
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
     - Fixed in version: 4.7.2
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: ![User Enumeration]()
   - [ ] Steps to recreate: 
+    - Create new user(s).
+    - Enter a known username such as admin or moderator in my case followed by an invalid password for that account.
+    - Detailed error message appears letting a user or attacker know that there is infact an account named admin, moderator, etc.
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
+    - [CVE-2017-5487](https://github.com/WordPress/WordPress/commit/daf358983cc1ce0c77bf6d2de2ebbb43df2add60)
+2. Variation of CVE-2015-3440
+  - [ ] Summary: 
+    - Vulnerability types: Persistent XSS via authenticated user
+    - Tested in version: 4.2
+    - Fixed in version: Unknown
+  - [ ] GIF Walkthrough: [Persistent XSS via authenticated user (variation of CVE-2015-3440)]
+  - [ ] Steps to recreate: 
+    - Created a new account with editor privileges named moderator which was used for the user enumeration walkthrough.
+    - Logged into moderator and navigated to the "Example front page" post.
+    - Entered the following code into the ![]<a href=" onmouseover=alert(unescape(/xss/.source)) {enter more data here to make the overall length of the comment 64kb(65536 bytes/characters) long or greater}"
+    - Note that there is no closing bracket for the opening anchor tag nor is there a closing anchor tag.
+  - [ ] Affected source code:
+    - [Klikki's exploit code](https://klikki.fi/adv/wordpress2.html)
+      - [Exploit-db 36844](https://www.exploit-db.com/exploits/36844/)
+3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
@@ -24,7 +41,7 @@ Time spent: 5 hours spent in total
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
+4. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
@@ -33,16 +50,7 @@ Time spent: 5 hours spent in total
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
+5. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
