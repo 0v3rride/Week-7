@@ -27,7 +27,7 @@ Time spent: 5 hours spent in total
   - [+] Steps to recreate: 
     - Created a new account with editor privileges named moderator which was used for the user enumeration walkthrough.
     - Logged into moderator and navigated to the "Example front page" post.
-    - Entered the following code into the ![]<a href=" onmouseover=alert(unescape(/xss/.source)) {enter more data here to make the overall length of the comment 64kb(65536 bytes/characters) long or greater}"
+    - Entered the following code into the ![<a href=" onmouseover=alert(unescape(/xss/.source)) {enter more data here to make the overall length of the comment 64kb(65536 bytes/characters) long or greater}"]
     - Note that there is no closing bracket for the opening anchor tag nor is there a closing anchor tag.
   - [+] Affected source code:
     - [Klikki's exploit code](https://klikki.fi/adv/wordpress2.html)
