@@ -7,7 +7,7 @@ Time spent: 5 hours spent in total
 ## Pentesting Report
 
 ### 1. User Enumeration <= 4.7.1 (CVE-2017-5487)
-  - [+] Summary: 
+  - Summary: 
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
     - Fixed in version: 4.7.2
