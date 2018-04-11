@@ -67,7 +67,7 @@ Time spent: 5 hours spent in total
   - Steps to recreate:
     - This must be done in Linux and you must be authenticated.
     - Create a .png file that is 20MB in size using the command `fallocate -l 20M bad_file.png` one can also use
-the dd command `dd if=/dev/<zero|urandom> of=~/Desktop/bad_file.txt bs=2048 count=10` or another command that fulfills this requirement.
+the dd command `dd if=/dev/<zero|urandom> of=~/Desktop/bad_file.png bs=2048 count=10` or another command that fulfills this requirement.
     - Rename the file to `Some random name<img src=x onerror=alert(1)>.png`.
     - Upload the file via the add new media option and drag the file you made into the drop the area as the admin.
   - Affected source code:
@@ -92,7 +92,7 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Using vagrant to setup wpdistillery was fairly easy to do once I got acquainted with the process. I couldn't really find anything pertaining to what I specifically did for exploit 2 (Persistent XSS as an authenticated user (variation of CVE-2015-3440)). I discovered it by playing around with it and trying different permuations of the exploit code by Klikki which eventually led to the XSS exploit. I also came across an interesting exploit (WordPress < 4.7.4 - Unauthorized Password Reset - https://www.exploit-db.com/exploits/41963/). However, from my understanding this would require me to setup my own temporary domain along with a publicly routable email server which I don't have enough insight for, but nevertheless the PoC was interesting to read about. 
+Using vagrant to setup wpdistillery was fairly easy to do once I got acquainted with the process. I couldn't really find anything pertaining to what I specifically did for exploit 2 (Persistent XSS as an authenticated user (variation of CVE-2015-3440)). I discovered it by playing around with it and trying different permuations of the exploit code by Klikki which eventually led to the XSS exploit. I also came across an interesting exploit (WordPress < 4.7.4 - Unauthorized Password Reset - https://www.exploit-db.com/exploits/41963/). However, from my understanding this would require me to setup my own temporary domain along with a publicly routable email server which I don't have enough insight for, but nevertheless the PoC was interesting to read about [WordPress Core <= 4.7.4 Potential Unauthorized Password Reset](https://exploitbox.io/vuln/WordPress-Exploit-4-7-Unauth-Password-Reset-0day-CVE-2017-8295.html)
 
 ## License
 
